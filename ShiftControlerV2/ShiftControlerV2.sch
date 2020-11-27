@@ -79,12 +79,12 @@ $EndComp
 $Comp
 L power:GND #PWR03
 U 1 1 5FBA1370
-P 3300 2100
-F 0 "#PWR03" H 3300 1850 50  0001 C CNN
-F 1 "GND" H 3305 1927 50  0000 C CNN
-F 2 "" H 3300 2100 50  0001 C CNN
-F 3 "" H 3300 2100 50  0001 C CNN
-	1    3300 2100
+P 3500 2100
+F 0 "#PWR03" H 3500 1850 50  0001 C CNN
+F 1 "GND" H 3600 2100 50  0000 C CNN
+F 2 "" H 3500 2100 50  0001 C CNN
+F 3 "" H 3500 2100 50  0001 C CNN
+	1    3500 2100
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -605,8 +605,6 @@ F 3 "" H 1850 1950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1850 1800 1350 1800
-Wire Wire Line
-	3150 2100 3300 2100
 Text GLabel 6850 1750 2    50   Input ~ 0
 OUT1
 Text GLabel 9850 1750 2    50   Input ~ 0
@@ -653,365 +651,111 @@ PB5
 Text GLabel 3150 3900 2    50   Input ~ 0
 PB4
 $Comp
-L dk_Transistors-FETs-MOSFETs-Single:BSS138 Q4
-U 1 1 5FC2DC33
-P 5450 3600
-F 0 "Q4" H 5558 3653 60  0000 L CNN
-F 1 "BSS138" H 5558 3547 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 5650 3800 60  0001 L CNN
-F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 5650 3900 60  0001 L CNN
-F 4 "BSS138CT-ND" H 5650 4000 60  0001 L CNN "Digi-Key_PN"
-F 5 "BSS138" H 5650 4100 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5650 4200 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 5650 4300 60  0001 L CNN "Family"
-F 8 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 5650 4400 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/on-semiconductor/BSS138/BSS138CT-ND/244294" H 5650 4500 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET N-CH 50V 220MA SOT-23" H 5650 4600 60  0001 L CNN "Description"
-F 11 "ON Semiconductor" H 5650 4700 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5650 4800 60  0001 L CNN "Status"
-	1    5450 3600
-	0    1    1    0   
-$EndComp
-$Comp
-L Lukas_Library:NCV7805BDTRKG U2
-U 1 1 5FB9D9E2
-P 8550 3450
-F 0 "U2" H 8550 3692 50  0000 C CNN
-F 1 "NCV7805BDTRKG" H 8550 3601 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin4" H 8550 3450 50  0001 C CNN
-F 3 "https://www.onsemi.com/pub/Collateral/MC7800-D.PDF" H 8550 3450 50  0001 C CNN
-	1    8550 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C12
-U 1 1 5FB9ED83
-P 8050 3550
-F 0 "C12" H 8142 3596 50  0000 L CNN
-F 1 "10n" H 8142 3505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder" H 8050 3550 50  0001 C CNN
-F 3 "~" H 8050 3550 50  0001 C CNN
-	1    8050 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C13
-U 1 1 5FB9FCC0
-P 9100 3550
-F 0 "C13" H 8900 3600 50  0000 L CNN
-F 1 "10n" H 8900 3500 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder" H 9100 3550 50  0001 C CNN
-F 3 "~" H 9100 3550 50  0001 C CNN
-	1    9100 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP_Small C11
-U 1 1 5FBA3A24
-P 7850 3550
-F 0 "C11" H 7650 3600 50  0000 L CNN
-F 1 "10u" H 7650 3500 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder" H 7850 3550 50  0001 C CNN
-F 3 "~" H 7850 3550 50  0001 C CNN
-	1    7850 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP_Small C14
-U 1 1 5FBA460E
-P 9300 3550
-F 0 "C14" H 9400 3600 50  0000 L CNN
-F 1 "10u" H 9400 3500 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder" H 9300 3550 50  0001 C CNN
-F 3 "~" H 9300 3550 50  0001 C CNN
-	1    9300 3550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8850 3450 9100 3450
-Wire Wire Line
-	9100 3450 9300 3450
-Connection ~ 9100 3450
-Wire Wire Line
-	8250 3450 8050 3450
-Wire Wire Line
-	8050 3450 7850 3450
-Connection ~ 8050 3450
-Wire Wire Line
-	7850 3450 7850 3300
-Connection ~ 7850 3450
-Wire Wire Line
-	9300 3450 9300 3300
-Connection ~ 9300 3450
-Wire Wire Line
-	7850 3650 7850 3800
-Wire Wire Line
-	7850 3800 8050 3800
-Wire Wire Line
-	8450 3750 8450 3800
-Connection ~ 8450 3800
-Wire Wire Line
-	8050 3650 8050 3800
-Connection ~ 8050 3800
-Wire Wire Line
-	8050 3800 8450 3800
-Wire Wire Line
-	9300 3650 9300 3800
-Wire Wire Line
-	8450 3800 8550 3800
-Wire Wire Line
-	8650 3750 8650 3800
-Connection ~ 8650 3800
-Wire Wire Line
-	8650 3800 9100 3800
-Wire Wire Line
-	9100 3650 9100 3800
-Connection ~ 9100 3800
-Wire Wire Line
-	9100 3800 9300 3800
-$Comp
 L power:GND #PWR028
 U 1 1 5FBB82AC
-P 8550 3800
-F 0 "#PWR028" H 8550 3550 50  0001 C CNN
-F 1 "GND" H 8555 3627 50  0000 C CNN
-F 2 "" H 8550 3800 50  0001 C CNN
-F 3 "" H 8550 3800 50  0001 C CNN
-	1    8550 3800
+P 4800 3600
+F 0 "#PWR028" H 4800 3350 50  0001 C CNN
+F 1 "GND" H 4805 3427 50  0000 C CNN
+F 2 "" H 4800 3600 50  0001 C CNN
+F 3 "" H 4800 3600 50  0001 C CNN
+	1    4800 3600
 	1    0    0    -1  
 $EndComp
-Connection ~ 8550 3800
-Wire Wire Line
-	8550 3800 8650 3800
 $Comp
 L power:+12V #PWR027
 U 1 1 5FBB9673
-P 7850 3300
-F 0 "#PWR027" H 7850 3150 50  0001 C CNN
-F 1 "+12V" H 7865 3473 50  0000 C CNN
-F 2 "" H 7850 3300 50  0001 C CNN
-F 3 "" H 7850 3300 50  0001 C CNN
-	1    7850 3300
+P 4800 3100
+F 0 "#PWR027" H 4800 2950 50  0001 C CNN
+F 1 "+12V" H 4815 3273 50  0000 C CNN
+F 2 "" H 4800 3100 50  0001 C CNN
+F 3 "" H 4800 3100 50  0001 C CNN
+	1    4800 3100
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR029
-U 1 1 5FBBE7F6
-P 9300 3300
-F 0 "#PWR029" H 9300 3150 50  0001 C CNN
-F 1 "+5V" H 9315 3473 50  0000 C CNN
-F 2 "" H 9300 3300 50  0001 C CNN
-F 3 "" H 9300 3300 50  0001 C CNN
-	1    9300 3300
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	7500 3000 9650 3000
-Wire Notes Line
-	9650 3000 9650 4050
-Wire Notes Line
-	9650 4050 7500 4050
-Wire Notes Line
-	7500 4050 7500 3000
-Text Notes 8450 2950 0    50   ~ 0
-VREG
-Text GLabel 5750 3600 2    50   Input ~ 0
-IN1
-Wire Wire Line
-	5250 3600 5100 3600
-$Comp
-L Device:R_Small R10
-U 1 1 5FB9DD59
-P 5100 3500
-F 0 "R10" H 5150 3500 50  0000 L CNN
-F 1 "10k" H 5150 3400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" H 5100 3500 50  0001 C CNN
-F 3 "~" H 5100 3500 50  0001 C CNN
-	1    5100 3500
-	1    0    0    1   
-$EndComp
-Connection ~ 5100 3600
-Wire Wire Line
-	5100 3600 4950 3600
-Wire Wire Line
-	5100 3400 5100 3300
-Wire Wire Line
-	5100 3300 5350 3300
-Text GLabel 4950 3600 0    50   Input ~ 0
-PB5
-$Comp
-L Device:R_Small R12
-U 1 1 5FBA6269
-P 5700 3500
-F 0 "R12" H 5750 3500 50  0000 L CNN
-F 1 "10k" H 5750 3400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" H 5700 3500 50  0001 C CNN
-F 3 "~" H 5700 3500 50  0001 C CNN
-	1    5700 3500
-	1    0    0    1   
-$EndComp
-$Comp
-L power:+5V #PWR026
-U 1 1 5FBA7A40
-P 5700 3400
-F 0 "#PWR026" H 5700 3250 50  0001 C CNN
-F 1 "+5V" H 5715 3573 50  0000 C CNN
-F 2 "" H 5700 3400 50  0001 C CNN
-F 3 "" H 5700 3400 50  0001 C CNN
-	1    5700 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5650 3600 5700 3600
-Connection ~ 5700 3600
-Wire Wire Line
-	5700 3600 5750 3600
-$Comp
-L power:+3.3V #PWR024
-U 1 1 5FBAF2EC
-P 5100 3300
-F 0 "#PWR024" H 5100 3150 50  0001 C CNN
-F 1 "+3.3V" H 5115 3473 50  0000 C CNN
-F 2 "" H 5100 3300 50  0001 C CNN
-F 3 "" H 5100 3300 50  0001 C CNN
-	1    5100 3300
-	1    0    0    -1  
-$EndComp
-Connection ~ 5100 3300
 $Comp
 L power:+3.3V #PWR022
 U 1 1 5FBAFF8C
-P 3150 2250
-F 0 "#PWR022" H 3150 2100 50  0001 C CNN
-F 1 "+3.3V" V 3165 2378 50  0000 L CNN
-F 2 "" H 3150 2250 50  0001 C CNN
-F 3 "" H 3150 2250 50  0001 C CNN
-	1    3150 2250
-	0    1    1    0   
+P 3200 2250
+F 0 "#PWR022" H 3200 2100 50  0001 C CNN
+F 1 "+3.3V" H 3200 2250 50  0000 L CNN
+F 2 "" H 3200 2250 50  0001 C CNN
+F 3 "" H 3200 2250 50  0001 C CNN
+	1    3200 2250
+	1    0    0    -1  
 $EndComp
+Text GLabel 3150 1800 2    50   Input ~ 0
+CANL
+Text GLabel 3150 1950 2    50   Input ~ 0
+CANH
+Text GLabel 3150 2550 2    50   Input ~ 0
+UARTRX
 $Comp
-L dk_Transistors-FETs-MOSFETs-Single:BSS138 Q3
-U 1 1 5FBB364D
-P 5450 5100
-F 0 "Q3" H 5558 5153 60  0000 L CNN
-F 1 "BSS138" H 5558 5047 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 5650 5300 60  0001 L CNN
-F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 5650 5400 60  0001 L CNN
-F 4 "BSS138CT-ND" H 5650 5500 60  0001 L CNN "Digi-Key_PN"
-F 5 "BSS138" H 5650 5600 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5650 5700 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 5650 5800 60  0001 L CNN "Family"
-F 8 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 5650 5900 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/on-semiconductor/BSS138/BSS138CT-ND/244294" H 5650 6000 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET N-CH 50V 220MA SOT-23" H 5650 6100 60  0001 L CNN "Description"
-F 11 "ON Semiconductor" H 5650 6200 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5650 6300 60  0001 L CNN "Status"
-	1    5450 5100
-	0    1    1    0   
-$EndComp
-Text GLabel 5750 5100 2    50   Input ~ 0
-IN2
-Wire Wire Line
-	5250 5100 5100 5100
-$Comp
-L Device:R_Small R9
-U 1 1 5FBB3659
-P 5100 5000
-F 0 "R9" H 5150 5000 50  0000 L CNN
-F 1 "10k" H 5150 4900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" H 5100 5000 50  0001 C CNN
-F 3 "~" H 5100 5000 50  0001 C CNN
-	1    5100 5000
-	1    0    0    1   
-$EndComp
-Connection ~ 5100 5100
-Wire Wire Line
-	5100 5100 4950 5100
-Wire Wire Line
-	5100 4900 5100 4800
-Wire Wire Line
-	5100 4800 5350 4800
-Text GLabel 4950 5100 0    50   Input ~ 0
-PB4
-$Comp
-L Device:R_Small R11
-U 1 1 5FBB3668
-P 5700 5000
-F 0 "R11" H 5750 5000 50  0000 L CNN
-F 1 "10k" H 5750 4900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" H 5700 5000 50  0001 C CNN
-F 3 "~" H 5700 5000 50  0001 C CNN
-	1    5700 5000
-	1    0    0    1   
-$EndComp
-$Comp
-L power:+5V #PWR025
-U 1 1 5FBB3672
-P 5700 4900
-F 0 "#PWR025" H 5700 4750 50  0001 C CNN
-F 1 "+5V" H 5715 5073 50  0000 C CNN
-F 2 "" H 5700 4900 50  0001 C CNN
-F 3 "" H 5700 4900 50  0001 C CNN
-	1    5700 4900
+L Device:C_Small C11
+U 1 1 5FC1B976
+P 4800 3350
+F 0 "C11" H 4650 3450 50  0000 L CNN
+F 1 "1000u" H 4500 3300 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 4800 3350 50  0001 C CNN
+F 3 "~" H 4800 3350 50  0001 C CNN
+	1    4800 3350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5650 5100 5700 5100
-Connection ~ 5700 5100
+	4800 3450 4800 3600
+Wire Notes Line
+	4500 3850 4500 2800
+Text GLabel 3150 2700 2    50   Input ~ 0
+UARTTX
+Text GLabel 2600 5900 2    50   Input ~ 0
+UARTRX
+Text GLabel 2600 6000 2    50   Input ~ 0
+UARTTX
 Wire Wire Line
-	5700 5100 5750 5100
-$Comp
-L power:+3.3V #PWR023
-U 1 1 5FBB367F
-P 5100 4800
-F 0 "#PWR023" H 5100 4650 50  0001 C CNN
-F 1 "+3.3V" H 5115 4973 50  0000 C CNN
-F 2 "" H 5100 4800 50  0001 C CNN
-F 3 "" H 5100 4800 50  0001 C CNN
-	1    5100 4800
-	1    0    0    -1  
-$EndComp
-Connection ~ 5100 4800
+	4800 3100 4800 3250
 Wire Notes Line
-	4500 3000 6350 3000
+	4500 2800 5050 2800
 Wire Notes Line
-	6350 3000 6350 4150
+	5050 2800 5050 3850
 Wire Notes Line
-	6350 4150 4500 4150
-Wire Notes Line
-	4500 4150 4500 3000
-Wire Notes Line
-	6350 4500 6350 5650
-Wire Notes Line
-	6350 5650 4500 5650
-Wire Notes Line
-	4500 4500 6350 4500
-Wire Notes Line
-	4500 5650 4500 4500
-Text Notes 4900 2950 0    50   ~ 0
-Logic Level Converter 1\n
-Text Notes 4950 4450 0    50   ~ 0
-Logic Level Converter 2
-$Comp
-L power:+5V #PWR?
-U 1 1 5FC742C4
-P 8550 1550
-F 0 "#PWR?" H 8550 1400 50  0001 C CNN
-F 1 "+5V" H 8565 1723 50  0000 C CNN
-F 2 "" H 8550 1550 50  0001 C CNN
-F 3 "" H 8550 1550 50  0001 C CNN
-	1    8550 1550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5FC74F84
-P 5550 1550
-F 0 "#PWR?" H 5550 1400 50  0001 C CNN
-F 1 "+5V" H 5565 1723 50  0000 C CNN
-F 2 "" H 5550 1550 50  0001 C CNN
-F 3 "" H 5550 1550 50  0001 C CNN
-	1    5550 1550
-	0    -1   -1   0   
-$EndComp
+	5050 3850 4500 3850
+Text GLabel 5550 1550 0    50   Input ~ 0
+INH1
+Text GLabel 8550 1550 0    50   Input ~ 0
+INH2
+Text GLabel 3150 3600 2    50   Input ~ 0
+INH1
+Text GLabel 3150 3450 2    50   Input ~ 0
+INH2
+Wire Wire Line
+	3200 2250 3150 2250
+Wire Wire Line
+	3150 2100 3500 2100
+NoConn ~ 3150 2400
+NoConn ~ 1850 2100
+NoConn ~ 1850 2250
+NoConn ~ 1850 2400
+NoConn ~ 1850 2550
+NoConn ~ 1850 2700
+NoConn ~ 1850 2850
+NoConn ~ 1850 3000
+NoConn ~ 1850 3150
+NoConn ~ 1850 3300
+NoConn ~ 1850 3450
+NoConn ~ 1850 3600
+NoConn ~ 1850 3750
+NoConn ~ 1850 3900
+NoConn ~ 2100 5600
+NoConn ~ 2100 5700
+NoConn ~ 2100 5800
+NoConn ~ 2100 5900
+NoConn ~ 2600 5800
+NoConn ~ 2600 5700
+Text Notes 4700 2750 0    50   ~ 0
+REG\n
+Text GLabel 3150 2850 2    50   Input ~ 0
+CURRENT1
+Text GLabel 3150 3000 2    50   Input ~ 0
+CURRENT2
+NoConn ~ 3150 3150
+NoConn ~ 3150 3300
 $EndSCHEMATC
