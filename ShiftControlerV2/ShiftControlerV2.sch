@@ -605,9 +605,9 @@ F 3 "~" H 4800 3300 50  0001 C CNN
 	1    4800 3300
 	1    0    0    -1  
 $EndComp
-Text GLabel 5100 3300 2    50   Input ~ 0
+Text GLabel 5100 3400 2    50   Input ~ 0
 CANH
-Text GLabel 5100 3200 2    50   Input ~ 0
+Text GLabel 5100 3500 2    50   Input ~ 0
 CANL
 $Comp
 L power:+12V #PWR020
@@ -685,9 +685,9 @@ Wire Notes Line
 	7250 3800 7250 2750
 Text GLabel 3150 2700 2    50   Input ~ 0
 UARTTX
-Text GLabel 5100 3400 2    50   Input ~ 0
+Text GLabel 5100 3300 2    50   Input ~ 0
 UARTRX
-Text GLabel 5100 3500 2    50   Input ~ 0
+Text GLabel 5100 3200 2    50   Input ~ 0
 UARTTX
 Wire Notes Line
 	7250 2750 7800 2750
@@ -719,9 +719,9 @@ NoConn ~ 1850 3750
 NoConn ~ 1850 3900
 Text Notes 7450 2750 0    50   ~ 0
 REG\n
-Text GLabel 3150 2850 2    50   Input ~ 0
-CURRENT1
 Text GLabel 3150 3000 2    50   Input ~ 0
+CURRENT1
+Text GLabel 3150 2850 2    50   Input ~ 0
 CURRENT2
 NoConn ~ 3150 3150
 NoConn ~ 3150 3300

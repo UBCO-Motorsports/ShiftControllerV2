@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name ShiftControlerFootprints)(type KiCad)(uri ${KIPRJMOD}/ShiftControlerFootprints.pretty)(options "")(descr ""))
+)
