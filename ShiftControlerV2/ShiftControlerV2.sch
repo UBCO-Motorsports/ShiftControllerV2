@@ -5,10 +5,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "ShiftController V2"
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Date "2021-01-26"
+Rev "1"
+Comp "UBCO MotorSports"
+Comment1 "DB: Jacob N"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -676,7 +676,7 @@ U 1 1 5FC1B976
 P 7550 3300
 F 0 "C11" H 7400 3400 50  0000 L CNN
 F 1 "1000u" H 7250 3250 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 7550 3300 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P7.50mm" H 7550 3300 50  0001 C CNN
 F 3 "~" H 7550 3300 50  0001 C CNN
 	1    7550 3300
 	1    0    0    -1  
