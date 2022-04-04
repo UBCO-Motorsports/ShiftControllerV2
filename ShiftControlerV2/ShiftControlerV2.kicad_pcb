@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.9)-1")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.5)-3")
 
   (general
     (thickness 1.6)
@@ -2649,6 +2649,21 @@
         (xy 49.403 68.355623) (xy 49.313815 68.428815) (xy 49.234463 68.525506) (xy 49.175498 68.63582) (xy 49.139188 68.755518)
         (xy 49.126928 68.88) (xy 49.126928 73.09177) (xy 47.161699 75.057) (xy 44.45 75.057) (xy 44.45 68.326)
         (xy 49.403 68.326)
+      )
+    )
+  )
+  (zone (net 0) (net_name "") (layer Edge.Cuts) (tstamp 0) (hatch edge 0.508)
+    (connect_pads (clearance 0.508))
+    (min_thickness 0.254)
+    (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 88.9 165.1) (xy 42.545 165.1) (xy 42.545 38.1) (xy 88.9 38.1)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 88.773 164.973) (xy 42.672 164.973) (xy 42.672 38.227) (xy 88.773 38.227)
       )
     )
   )

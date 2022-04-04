@@ -1,0 +1,14 @@
+main.c:181:6:Init_SBC	24	static
+main.c:211:6:ConfigureCANFilters	104	dynamic
+main.c:258:6:ClearCANBuffers	16	static
+main.c:265:6:Init_CAN	8	static
+main.c:285:5:main	16	static
+main.c:377:6:SystemClock_Config	72	static
+main.c:416:13:MX_CAN_Init	8	static
+main.c:453:13:MX_SPI1_Init	8	static
+main.c:493:13:MX_GPIO_Init	40	static
+main.c:531:6:HAL_CAN_RxFifo0MsgPendingCallback	56	static
+main.c:596:6:StartShift	24	static
+main.c:667:6:StartFeedWDG	32	static
+main.c:699:6:HAL_TIM_PeriodElapsedCallback	16	static
+main.c:716:6:Error_Handler	4	static,ignoring_inline_asm
