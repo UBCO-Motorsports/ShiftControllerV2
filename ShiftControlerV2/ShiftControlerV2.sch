@@ -28,8 +28,6 @@ Wire Notes Line
 	4000 1000 1000 1000
 Wire Notes Line
 	1000 1000 1000 4500
-Wire Notes Line
-	1000 4500 4000 4500
 $Comp
 L power:GND #PWR02
 U 1 1 5FB57D42
@@ -199,7 +197,7 @@ F 3 "~" H 5350 1650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 5200 1650 0    50   Input ~ 0
-IN1
+IN1H
 $Comp
 L Device:R_Small R4
 U 1 1 5FB9FF89
@@ -457,7 +455,7 @@ F 3 "~" H 8150 1650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 8000 1650 0    50   Input ~ 0
-IN2
+IN2H
 $Comp
 L Device:R_Small R8
 U 1 1 5FBBD273
@@ -696,13 +694,13 @@ Wire Notes Line
 Wire Notes Line
 	7800 3800 7250 3800
 Text GLabel 5200 1550 0    50   Input ~ 0
-INH1
+INH1H
 Text GLabel 8000 1550 0    50   Input ~ 0
-INH2
+INH2H
 Text GLabel 3150 3600 2    50   Input ~ 0
-INH1
+INH1L
 Text GLabel 3150 3450 2    50   Input ~ 0
-INH2
+INH2L
 NoConn ~ 3150 2400
 NoConn ~ 1850 2100
 NoConn ~ 1850 2250
@@ -737,9 +735,9 @@ F 3 "" H 2250 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3150 3750 2    50   Input ~ 0
-IN2
+IN2L
 Text GLabel 3150 3900 2    50   Input ~ 0
-IN1
+IN1L
 $Comp
 L power:+12V #PWR0101
 U 1 1 5FC44590
@@ -899,4 +897,620 @@ F 3 "" H 6700 3400 50  0001 C CNN
 $EndComp
 Wire Notes Line
 	4000 4500 4000 1000
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:BSS138 Q5
+U 1 1 6250E1A7
+P 3950 5200
+F 0 "Q5" V 4111 5200 60  0000 C CNN
+F 1 "BSS138" V 4217 5200 60  0000 C CNN
+F 2 "digikey-footprints:SOT-23-3" H 4150 5400 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 4150 5500 60  0001 L CNN
+F 4 "BSS138CT-ND" H 4150 5600 60  0001 L CNN "Digi-Key_PN"
+F 5 "BSS138" H 4150 5700 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 4150 5800 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 4150 5900 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 4150 6000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/BSS138/BSS138CT-ND/244294" H 4150 6100 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 50V 220MA SOT-23" H 4150 6200 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 4150 6300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4150 6400 60  0001 L CNN "Status"
+	1    3950 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:BSS138 Q6
+U 1 1 6250F801
+P 3950 6000
+F 0 "Q6" V 4111 6000 60  0000 C CNN
+F 1 "BSS138" V 4217 6000 60  0000 C CNN
+F 2 "digikey-footprints:SOT-23-3" H 4150 6200 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 4150 6300 60  0001 L CNN
+F 4 "BSS138CT-ND" H 4150 6400 60  0001 L CNN "Digi-Key_PN"
+F 5 "BSS138" H 4150 6500 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 4150 6600 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 4150 6700 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 4150 6800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/BSS138/BSS138CT-ND/244294" H 4150 6900 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 50V 220MA SOT-23" H 4150 7000 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 4150 7100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4150 7200 60  0001 L CNN "Status"
+	1    3950 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R13
+U 1 1 6250FC67
+P 3500 5100
+F 0 "R13" V 3600 5000 50  0000 C CNN
+F 1 "10k" V 3600 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3500 5100 50  0001 C CNN
+F 3 "~" H 3500 5100 50  0001 C CNN
+	1    3500 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R15
+U 1 1 6251345D
+P 4450 5100
+F 0 "R15" V 4550 5000 50  0000 C CNN
+F 1 "10k" V 4550 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4450 5100 50  0001 C CNN
+F 3 "~" H 4450 5100 50  0001 C CNN
+	1    4450 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R16
+U 1 1 62513827
+P 4450 5900
+F 0 "R16" V 4550 5800 50  0000 C CNN
+F 1 "10k" V 4550 5950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4450 5900 50  0001 C CNN
+F 3 "~" H 4450 5900 50  0001 C CNN
+	1    4450 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R14
+U 1 1 62513C18
+P 3500 5900
+F 0 "R14" V 3600 5800 50  0000 C CNN
+F 1 "10k" V 3600 5950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3500 5900 50  0001 C CNN
+F 3 "~" H 3500 5900 50  0001 C CNN
+	1    3500 5900
+	-1   0    0    1   
+$EndComp
+Text GLabel 4750 5200 2    50   Input ~ 0
+INH1H
+Text GLabel 4700 6000 2    50   Input ~ 0
+IN1H
+Text GLabel 2400 6000 2    50   Input ~ 0
+INH2H
+Text GLabel 2400 5200 2    50   Input ~ 0
+IN2H
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:BSS138 Q4
+U 1 1 6251413A
+P 1650 6000
+F 0 "Q4" V 1811 6000 60  0000 C CNN
+F 1 "BSS138" V 1917 6000 60  0000 C CNN
+F 2 "digikey-footprints:SOT-23-3" H 1850 6200 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 1850 6300 60  0001 L CNN
+F 4 "BSS138CT-ND" H 1850 6400 60  0001 L CNN "Digi-Key_PN"
+F 5 "BSS138" H 1850 6500 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 1850 6600 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 1850 6700 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 1850 6800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/BSS138/BSS138CT-ND/244294" H 1850 6900 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 50V 220MA SOT-23" H 1850 7000 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 1850 7100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1850 7200 60  0001 L CNN "Status"
+	1    1650 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:BSS138 Q3
+U 1 1 625150C1
+P 1650 5200
+F 0 "Q3" V 1811 5200 60  0000 C CNN
+F 1 "BSS138" V 1917 5200 60  0000 C CNN
+F 2 "digikey-footprints:SOT-23-3" H 1850 5400 60  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 1850 5500 60  0001 L CNN
+F 4 "BSS138CT-ND" H 1850 5600 60  0001 L CNN "Digi-Key_PN"
+F 5 "BSS138" H 1850 5700 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 1850 5800 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 1850 5900 60  0001 L CNN "Family"
+F 8 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 1850 6000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/BSS138/BSS138CT-ND/244294" H 1850 6100 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 50V 220MA SOT-23" H 1850 6200 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 1850 6300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1850 6400 60  0001 L CNN "Status"
+	1    1650 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R12
+U 1 1 6251715D
+P 2150 5900
+F 0 "R12" V 2250 5800 50  0000 C CNN
+F 1 "10k" V 2250 5950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2150 5900 50  0001 C CNN
+F 3 "~" H 2150 5900 50  0001 C CNN
+	1    2150 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R11
+U 1 1 6251767F
+P 2150 5100
+F 0 "R11" V 2250 5000 50  0000 C CNN
+F 1 "10k" V 2250 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2150 5100 50  0001 C CNN
+F 3 "~" H 2150 5100 50  0001 C CNN
+	1    2150 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 625179B2
+P 1200 5100
+F 0 "R9" V 1300 5000 50  0000 C CNN
+F 1 "10k" V 1300 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1200 5100 50  0001 C CNN
+F 3 "~" H 1200 5100 50  0001 C CNN
+	1    1200 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R10
+U 1 1 62517DD1
+P 1200 5900
+F 0 "R10" V 1300 5800 50  0000 C CNN
+F 1 "10k" V 1300 5950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1200 5900 50  0001 C CNN
+F 3 "~" H 1200 5900 50  0001 C CNN
+	1    1200 5900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2400 5200 2150 5200
+Connection ~ 2150 5200
+Wire Wire Line
+	2150 5200 1850 5200
+Wire Wire Line
+	1450 5200 1200 5200
+Wire Wire Line
+	1200 5000 1200 4900
+Wire Wire Line
+	1200 4900 1550 4900
+Wire Wire Line
+	1850 6000 2150 6000
+Connection ~ 2150 6000
+Wire Wire Line
+	2150 6000 2400 6000
+Wire Wire Line
+	1200 6000 1450 6000
+Wire Wire Line
+	1200 5800 1200 5700
+Wire Wire Line
+	1200 5700 1550 5700
+Wire Wire Line
+	3500 6000 3750 6000
+Wire Wire Line
+	3850 5700 3500 5700
+Wire Wire Line
+	3500 5700 3500 5800
+Wire Wire Line
+	4450 6000 4150 6000
+Wire Wire Line
+	4450 6000 4700 6000
+Connection ~ 4450 6000
+Wire Wire Line
+	4750 5200 4450 5200
+Connection ~ 4450 5200
+Wire Wire Line
+	4450 5200 4150 5200
+Wire Wire Line
+	3750 5200 3500 5200
+Wire Wire Line
+	3500 5000 3500 4900
+Wire Wire Line
+	3500 4900 3850 4900
+$Comp
+L power:+3.3V #PWR035
+U 1 1 6252E53A
+P 3500 4900
+F 0 "#PWR035" H 3500 4750 50  0001 C CNN
+F 1 "+3.3V" V 3500 5000 50  0000 L CNN
+F 2 "" H 3500 4900 50  0001 C CNN
+F 3 "" H 3500 4900 50  0001 C CNN
+	1    3500 4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 3500 4900
+$Comp
+L power:+3.3V #PWR036
+U 1 1 6252F887
+P 3500 5700
+F 0 "#PWR036" H 3500 5550 50  0001 C CNN
+F 1 "+3.3V" V 3500 5800 50  0000 L CNN
+F 2 "" H 3500 5700 50  0001 C CNN
+F 3 "" H 3500 5700 50  0001 C CNN
+	1    3500 5700
+	1    0    0    -1  
+$EndComp
+Connection ~ 3500 5700
+$Comp
+L power:+3.3V #PWR032
+U 1 1 6252FCB6
+P 1200 5700
+F 0 "#PWR032" H 1200 5550 50  0001 C CNN
+F 1 "+3.3V" V 1200 5800 50  0000 L CNN
+F 2 "" H 1200 5700 50  0001 C CNN
+F 3 "" H 1200 5700 50  0001 C CNN
+	1    1200 5700
+	1    0    0    -1  
+$EndComp
+Connection ~ 1200 5700
+$Comp
+L power:+3.3V #PWR031
+U 1 1 62530001
+P 1200 4900
+F 0 "#PWR031" H 1200 4750 50  0001 C CNN
+F 1 "+3.3V" V 1200 5000 50  0000 L CNN
+F 2 "" H 1200 4900 50  0001 C CNN
+F 3 "" H 1200 4900 50  0001 C CNN
+	1    1200 4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 1200 4900
+$Comp
+L power:+5V #PWR037
+U 1 1 6253053B
+P 4450 5000
+F 0 "#PWR037" H 4450 4850 50  0001 C CNN
+F 1 "+5V" H 4465 5173 50  0000 C CNN
+F 2 "" H 4450 5000 50  0001 C CNN
+F 3 "" H 4450 5000 50  0001 C CNN
+	1    4450 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR038
+U 1 1 62531008
+P 4450 5800
+F 0 "#PWR038" H 4450 5650 50  0001 C CNN
+F 1 "+5V" H 4465 5973 50  0000 C CNN
+F 2 "" H 4450 5800 50  0001 C CNN
+F 3 "" H 4450 5800 50  0001 C CNN
+	1    4450 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR034
+U 1 1 625313F9
+P 2150 5800
+F 0 "#PWR034" H 2150 5650 50  0001 C CNN
+F 1 "+5V" H 2165 5973 50  0000 C CNN
+F 2 "" H 2150 5800 50  0001 C CNN
+F 3 "" H 2150 5800 50  0001 C CNN
+	1    2150 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR033
+U 1 1 62531889
+P 2150 5000
+F 0 "#PWR033" H 2150 4850 50  0001 C CNN
+F 1 "+5V" H 2165 5173 50  0000 C CNN
+F 2 "" H 2150 5000 50  0001 C CNN
+F 3 "" H 2150 5000 50  0001 C CNN
+	1    2150 5000
+	1    0    0    -1  
+$EndComp
+Text GLabel 3250 5200 0    50   Input ~ 0
+INH2L
+Text GLabel 3250 6000 0    50   Input ~ 0
+INH1L
+Text GLabel 950  6000 0    50   Input ~ 0
+IN2L
+Text GLabel 900  5200 0    50   Input ~ 0
+IN1L
+Wire Wire Line
+	3250 5200 3500 5200
+Connection ~ 3500 5200
+Wire Wire Line
+	3250 6000 3500 6000
+Connection ~ 3500 6000
+Wire Wire Line
+	950  6000 1200 6000
+Connection ~ 1200 6000
+Wire Wire Line
+	900  5200 1200 5200
+Connection ~ 1200 5200
+Wire Notes Line
+	600  4500 600  6400
+Wire Notes Line
+	2800 6400 2800 4500
+Wire Notes Line
+	5150 6400 5150 4500
+Wire Notes Line
+	600  6400 5150 6400
+Wire Notes Line
+	600  4500 5150 4500
+Text Notes 3700 6550 0    50   ~ 0
+To Big FET 2
+Text Notes 1400 6550 0    50   ~ 0
+To Big FET 1
+$Comp
+L Lukas_Library:NCV7805BDTRKG U3
+U 1 1 625572FD
+P 9500 3250
+F 0 "U3" H 9500 3492 50  0000 C CNN
+F 1 "NCV7805BDTRKG" H 9500 3401 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin4" H 9500 3250 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/MC7800-D.PDF" H 9500 3250 50  0001 C CNN
+	1    9500 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C17
+U 1 1 62557F7B
+P 9000 3350
+F 0 "C17" V 8900 3250 50  0000 C CNN
+F 1 "10n" V 8950 3250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 9000 3350 50  0001 C CNN
+F 3 "~" H 9000 3350 50  0001 C CNN
+	1    9000 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C18
+U 1 1 6255853F
+P 10000 3350
+F 0 "C18" V 9900 3250 50  0000 C CNN
+F 1 "10n" V 9950 3250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 10000 3350 50  0001 C CNN
+F 3 "~" H 10000 3350 50  0001 C CNN
+	1    10000 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP C19
+U 1 1 62558A32
+P 10300 3400
+F 0 "C19" H 10418 3446 50  0000 L CNN
+F 1 "10u" H 10418 3355 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x4.4" H 10338 3250 50  0001 C CNN
+F 3 "~" H 10300 3400 50  0001 C CNN
+	1    10300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C16
+U 1 1 625594B0
+P 8650 3400
+F 0 "C16" H 8768 3446 50  0000 L CNN
+F 1 "10u" H 8768 3355 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x4.4" H 8688 3250 50  0001 C CNN
+F 3 "~" H 8650 3400 50  0001 C CNN
+	1    8650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR041
+U 1 1 62559959
+P 8400 3250
+F 0 "#PWR041" H 8400 3100 50  0001 C CNN
+F 1 "+12V" H 8415 3423 50  0000 C CNN
+F 2 "" H 8400 3250 50  0001 C CNN
+F 3 "" H 8400 3250 50  0001 C CNN
+	1    8400 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR043
+U 1 1 62559E0F
+P 9500 3700
+F 0 "#PWR043" H 9500 3450 50  0001 C CNN
+F 1 "GND" H 9505 3527 50  0000 C CNN
+F 2 "" H 9500 3700 50  0001 C CNN
+F 3 "" H 9500 3700 50  0001 C CNN
+	1    9500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR044
+U 1 1 6255A391
+P 10550 3250
+F 0 "#PWR044" H 10550 3100 50  0001 C CNN
+F 1 "+5V" H 10565 3423 50  0000 C CNN
+F 2 "" H 10550 3250 50  0001 C CNN
+F 3 "" H 10550 3250 50  0001 C CNN
+	1    10550 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3250 8650 3250
+Connection ~ 8650 3250
+Wire Wire Line
+	8650 3250 9000 3250
+Connection ~ 9000 3250
+Wire Wire Line
+	9000 3250 9200 3250
+Wire Wire Line
+	9800 3250 10000 3250
+Connection ~ 10000 3250
+Wire Wire Line
+	10000 3250 10300 3250
+Connection ~ 10300 3250
+Wire Wire Line
+	10300 3250 10550 3250
+Wire Wire Line
+	8650 3550 9000 3550
+Connection ~ 9400 3550
+Wire Wire Line
+	9400 3550 9500 3550
+Connection ~ 9600 3550
+Wire Wire Line
+	9600 3550 10000 3550
+Wire Wire Line
+	10000 3450 10000 3550
+Connection ~ 10000 3550
+Wire Wire Line
+	10000 3550 10300 3550
+Wire Wire Line
+	9000 3450 9000 3550
+Connection ~ 9000 3550
+Wire Wire Line
+	9000 3550 9400 3550
+Wire Wire Line
+	9500 3700 9500 3550
+Connection ~ 9500 3550
+Wire Wire Line
+	9500 3550 9600 3550
+Wire Notes Line
+	8300 2850 10700 2850
+Wire Notes Line
+	10700 2850 10700 4000
+Wire Notes Line
+	10700 4000 8300 4000
+Wire Notes Line
+	8300 4000 8300 2850
+$Comp
+L Lukas_Library:LM1117-3.3 U2
+U 1 1 62575BAC
+P 7650 4550
+F 0 "U2" H 7650 4792 50  0000 C CNN
+F 1 "LM1117-3.3" H 7650 4701 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin4" H 7650 4550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 7650 4550 50  0001 C CNN
+	1    7650 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C13
+U 1 1 6257CC57
+P 7150 4650
+F 0 "C13" V 7050 4550 50  0000 C CNN
+F 1 "10n" V 7100 4550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7150 4650 50  0001 C CNN
+F 3 "~" H 7150 4650 50  0001 C CNN
+	1    7150 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C14
+U 1 1 6257CC5D
+P 8150 4650
+F 0 "C14" V 8050 4550 50  0000 C CNN
+F 1 "10n" V 8100 4550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8150 4650 50  0001 C CNN
+F 3 "~" H 8150 4650 50  0001 C CNN
+	1    8150 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP C15
+U 1 1 6257CC63
+P 8450 4700
+F 0 "C15" H 8568 4746 50  0000 L CNN
+F 1 "10u" H 8568 4655 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x4.4" H 8488 4550 50  0001 C CNN
+F 3 "~" H 8450 4700 50  0001 C CNN
+	1    8450 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C12
+U 1 1 6257CC69
+P 6800 4700
+F 0 "C12" H 6918 4746 50  0000 L CNN
+F 1 "10u" H 6918 4655 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x4.4" H 6838 4550 50  0001 C CNN
+F 3 "~" H 6800 4700 50  0001 C CNN
+	1    6800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR039
+U 1 1 6257CC6F
+P 6550 4550
+F 0 "#PWR039" H 6550 4400 50  0001 C CNN
+F 1 "+12V" H 6565 4723 50  0000 C CNN
+F 2 "" H 6550 4550 50  0001 C CNN
+F 3 "" H 6550 4550 50  0001 C CNN
+	1    6550 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR040
+U 1 1 6257CC75
+P 7650 5000
+F 0 "#PWR040" H 7650 4750 50  0001 C CNN
+F 1 "GND" H 7655 4827 50  0000 C CNN
+F 2 "" H 7650 5000 50  0001 C CNN
+F 3 "" H 7650 5000 50  0001 C CNN
+	1    7650 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 4550 6800 4550
+Connection ~ 6800 4550
+Wire Wire Line
+	6800 4550 7150 4550
+Connection ~ 7150 4550
+Wire Wire Line
+	7150 4550 7350 4550
+Wire Wire Line
+	7950 4550 8150 4550
+Connection ~ 8150 4550
+Wire Wire Line
+	8150 4550 8450 4550
+Connection ~ 8450 4550
+Wire Wire Line
+	8450 4550 8700 4550
+Wire Wire Line
+	6800 4850 7150 4850
+Wire Wire Line
+	8150 4750 8150 4850
+Connection ~ 8150 4850
+Wire Wire Line
+	8150 4850 8450 4850
+Wire Wire Line
+	7150 4750 7150 4850
+Connection ~ 7150 4850
+Wire Wire Line
+	7650 5000 7650 4850
+Connection ~ 7650 4850
+Wire Notes Line
+	6450 4150 8850 4150
+Wire Notes Line
+	8850 4150 8850 5300
+Wire Notes Line
+	8850 5300 6450 5300
+Wire Notes Line
+	6450 5300 6450 4150
+Wire Wire Line
+	7150 4850 7550 4850
+Wire Wire Line
+	7650 4850 7750 4850
+Connection ~ 7550 4850
+Wire Wire Line
+	7550 4850 7650 4850
+Connection ~ 7750 4850
+Wire Wire Line
+	7750 4850 8150 4850
+$Comp
+L power:+3.3V #PWR042
+U 1 1 62584CCB
+P 8700 4550
+F 0 "#PWR042" H 8700 4400 50  0001 C CNN
+F 1 "+3.3V" V 8700 4650 50  0000 L CNN
+F 2 "" H 8700 4550 50  0001 C CNN
+F 3 "" H 8700 4550 50  0001 C CNN
+	1    8700 4550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
